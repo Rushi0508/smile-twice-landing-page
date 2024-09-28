@@ -30,7 +30,7 @@ const Header = () => {
   }, []);
   return (
     <header id="main-header">
-      <div id="top-bar" className={`text-xs relative z-20 text-center w-full bg-[#FFDE00] py-2 transition-opacity duration-300 ${isSticky ? 'opacity-0 hidden' : 'opacity-100 visible'
+      <div id="top-bar" className={`text-xs text-black relative z-20 text-center w-full bg-[#FFDE00] py-2 transition-opacity duration-300 ${isSticky ? 'opacity-0 hidden' : 'opacity-100 visible'
         }`}>
         <a href="#">FREE VANILLA LAVENDAR TOOTHPASTE ON ORDERS OVER $40</a>
       </div>
@@ -60,7 +60,7 @@ const Header = () => {
 
 const Hero = () => {
   return (
-    <div className="h-screen flex items-center">
+    <div className="h-screen flex items-center text-black">
       <Image
         src="https://smiletwice.com/cdn/shop/files/Test-3-twice_1944x.jpg?v=1712606681"
         alt="Picture of the author"
@@ -84,7 +84,7 @@ const Hero = () => {
 
 const HeroBanner = () => {
   return (
-    <div className="bg-white w-full">
+    <div className="bg-white w-full text-black">
       <div className="2xl:w-2/3 lg:w-[95%] mx-auto">
         <div className="py-12 flex justify-around border-b-[1px] border-gray-700">
           <p>PORCHE</p>
@@ -153,7 +153,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="border-t-2">
+    <footer className="border-t-2 text-black">
       <div className="flex py-12 2xl:w-2/3 lg:w-[95%] mx-auto">
         <div className="flex gap-12 justify-between w-full py-6">
           <div>
@@ -207,7 +207,7 @@ const Footer = () => {
 
 const CTA = () => {
   return (
-    <div className="flex items-center">
+    <div className="flex items-center text-black">
       <div className="w-1/2 h-full px-12 mx-4 flex flex-col gap-6">
         <p className="text-xl">CULT FAVORITE</p>
         <p className="text-6xl">This is Oral Wellness IMMUNITY RINSE</p>
@@ -277,7 +277,7 @@ const Shop = () => {
   ]
 
   return (
-    <div className="py-12 w-full bg-[#FFDE00]">
+    <div className="py-12 w-full bg-[#FFDE00] text-black">
       <div className="mx-auto 2xl:w-2/3 lg:w-[95%]">
         <div>
           <div className="flex justify-between">
@@ -330,7 +330,7 @@ const Shop = () => {
 
 export default function Home() {
   return (
-    <>
+    <div className="text-black">
       <Header />
       <Hero />
       <HeroBanner />
@@ -338,6 +338,6 @@ export default function Home() {
       <CTA />
       <Video />
       <Footer />
-    </>
+    </div>
   );
 }
