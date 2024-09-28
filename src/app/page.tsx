@@ -60,7 +60,7 @@ const Header = () => {
 
 const Hero = () => {
   return (
-    <div className="h-screen flex items-center text-black">
+    <div className="h-screen flex items-center">
       <Image
         src="https://smiletwice.com/cdn/shop/files/Test-3-twice_1944x.jpg?v=1712606681"
         alt="Picture of the author"
@@ -72,8 +72,8 @@ const Hero = () => {
       <div className="absolute w-full mb-[20vh]">
         <div className="mx-auto 2xl:w-2/3 lg:w-[95%]">
           <div className="max-w-lg flex flex-col gap-4">
-            <p className="text-6xl">HEALTHY MOUTH Healthy Safe</p>
-            <p className="text-3xl">Award winning <span className="italic">oral wellness</span></p>
+            <p className="text-6xl text-black">HEALTHY MOUTH Healthy Safe</p>
+            <p className="text-3xl text-black">Award winning <span className="italic">oral wellness</span></p>
             <div className="mt-6"><Button className="px-12">SHOP NOW</Button></div>
           </div>
         </div>
@@ -84,17 +84,17 @@ const Hero = () => {
 
 const HeroBanner = () => {
   return (
-    <div className="bg-white w-full text-black">
+    <div className="bg-white w-full">
       <div className="2xl:w-2/3 lg:w-[95%] mx-auto">
         <div className="py-12 flex justify-around border-b-[1px] border-gray-700">
-          <p>PORCHE</p>
-          <p>ROG</p>
-          <p>VOGUE</p>
-          <p>WALLMART</p>
-          <p>WEGMENS</p>
+          <p className="text-black">PORCHE</p>
+          <p className="text-black">ROG</p>
+          <p className="text-black">VOGUE</p>
+          <p className="text-black">WALLMART</p>
+          <p className="text-black">WEGMENS</p>
         </div>
         <div className="border-b-[1px] border-gray-700">
-          <p className="text-6xl py-12 leading-tight">TWICE is a holistic oral health system that combines <span className="italic">cutting-edge science </span>
+          <p className="text-6xl py-12 leading-tight text-black">TWICE is a holistic oral health system that combines <span className="italic">cutting-edge science </span>
             and <span className="italic">clean ingredients </span> for better mouth body balance</p>
         </div>
         <div className="border-b-[1px] border-gray-700 py-4">
@@ -153,25 +153,25 @@ const Footer = () => {
   };
 
   return (
-    <footer className="border-t-2 text-black">
+    <footer className="border-t-2">
       <div className="flex py-12 2xl:w-2/3 lg:w-[95%] mx-auto">
         <div className="flex gap-12 justify-between w-full py-6">
           <div>
             <div className="text-base">
-              <p>ORAL WELLNESS for</p>
-              <p>YOUR MOUTH, BODY and SOUL™️</p><br />
-              <p className="text-xs">© 2022 Twice. Made by Concrete and Wollson</p>
+              <p className="text-black">ORAL WELLNESS for</p>
+              <p className="text-black">YOUR MOUTH, BODY and SOUL™️</p><br />
+              <p className="text-xs text-black">© 2022 Twice. Made by Concrete and Wollson</p>
             </div>
           </div>
           {
             Object.keys(footerLinks).map((key) => (
               <div key={key} className="flex flex-col gap-2">
-                <p className="text-xs">{key.toUpperCase()}</p>
+                <p className="text-xs text-black">{key.toUpperCase()}</p>
                 <ul className="text-[15px] flex flex-col gap-2">
                   {
                     footerLinks[key].map((link: any) => (
                       <li key={link.name}>
-                        <a href={link.url}>{link.name}</a>
+                        <a className="text-black" href={link.url}>{link.name}</a>
                       </li>
                     ))
                   }
@@ -180,14 +180,14 @@ const Footer = () => {
             ))
           }
           <div className="max-w-xs">
-            <p className="text-xs">SUBSCRIBE TO NEWSLETTER</p>
+            <p className="text-xs text-black">SUBSCRIBE TO NEWSLETTER</p>
             <div className="relative my-4 flex flex-col gap-4">
-              <input type="email" className="rounded-full border-[1px] border-black px-4 py-2" placeholder="Email" />
+              <input type="email" className="text-black rounded-full border-[1px] border-black px-4 py-2" placeholder="Email" />
               <Button>SUBSCRIBE</Button>
             </div>
             <div className="text-xs mt-8">
-              <p>Something to smile about in your inbox weekly. Your mouth, body and soul will thank you. Unsubscribe anytime.</p>
-              <p className="mt-4">Get connected: info@smiletwice.com</p>
+              <p className="text-black">Something to smile about in your inbox weekly. Your mouth, body and soul will thank you. Unsubscribe anytime.</p>
+              <p className="mt-4 text-black">Get connected: info@smiletwice.com</p>
             </div>
           </div>
         </div>
@@ -199,7 +199,6 @@ const Footer = () => {
           alt="logo"
           height={900}
         />
-
       </div>
     </footer >
   )
@@ -207,11 +206,11 @@ const Footer = () => {
 
 const CTA = () => {
   return (
-    <div className="flex items-center text-black">
+    <div className="flex items-center">
       <div className="w-1/2 h-full px-12 mx-4 flex flex-col gap-6">
-        <p className="text-xl">CULT FAVORITE</p>
-        <p className="text-6xl">This is Oral Wellness IMMUNITY RINSE</p>
-        <p className="text-xl">Pioneering dual-action, nano-emulsion technology delivers full-mouth freshness that improves the wellness of your mouth</p>
+        <p className="text-xl text-black">CULT FAVORITE</p>
+        <p className="text-6xl text-black">This is Oral Wellness IMMUNITY RINSE</p>
+        <p className="text-xl text-black">Pioneering dual-action, nano-emulsion technology delivers full-mouth freshness that improves the wellness of your mouth</p>
         <div>
           <Button>SHOP NOW</Button>
         </div>
@@ -277,12 +276,12 @@ const Shop = () => {
   ]
 
   return (
-    <div className="py-12 w-full bg-[#FFDE00] text-black">
+    <div className="py-12 w-full bg-[#FFDE00]">
       <div className="mx-auto 2xl:w-2/3 lg:w-[95%]">
         <div>
           <div className="flex justify-between">
-            <p className="text-4xl">Meet The Routine</p>
-            <p className="italic flex gap-2 text-xl items-center">Shop All <ArrowRight /></p>
+            <p className="text-4xl text-black">Meet The Routine</p>
+            <p className="italic flex gap-2 text-xl items-center text-black">Shop All <ArrowRight /></p>
           </div>
           <div className="flex justify-between">
             {
@@ -290,11 +289,11 @@ const Shop = () => {
                 <div key={index} className="flex flex-col justify-center items-center">
                   <img src={product.img} alt={product.name} />
                   <div className="flex flex-col items-center my-4">
-                    <p className="text-lg">{product.name}</p>
-                    <p className="text-xs">{product.description}</p>
+                    <p className="text-lg text-black">{product.name}</p>
+                    <p className="text-xs text-black">{product.description}</p>
                   </div>
                   <div className="flex flex-col items-center mt-4">
-                    <p className="text-sm mb-2">{product.price}</p>
+                    <p className="text-sm mb-2 text-black">{product.price}</p>
                     <Button className="text-[#FFDE00!important] bg-black text-xs px-10">SHOP NOW</Button>
                   </div>
                 </div>
@@ -302,8 +301,8 @@ const Shop = () => {
             }
           </div>
           <div className="flex flex-col items-center justify-center py-12 my-12 mx-auto">
-            <p className="text-6xl">Oral Wellness</p>
-            <p className="text-6xl"><span className="italic">begins </span> WITHIN</p>
+            <p className="text-6xl text-black">Oral Wellness</p>
+            <p className="text-6xl text-black"><span className="italic">begins </span> WITHIN</p>
           </div>
           <div className="flex gap-16 pb-12">
             <div className="w-1/2 relative flex justify-end">
@@ -315,8 +314,8 @@ const Shop = () => {
                 info.map((i, index) => (
                   <div key={index} className="flex flex-col gap-4">
                     {i.icon}
-                    <p className="text-lg">{i.name}</p>
-                    <p className="text-lg">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum sed, necessitatibus illo aut corrupti debitis voluptatum laudantium ipsam ea ab.</p>
+                    <p className="text-lg text-black">{i.name}</p>
+                    <p className="text-lg text-black">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum sed, necessitatibus illo aut corrupti debitis voluptatum laudantium ipsam ea ab.</p>
                   </div>
                 ))
               }
@@ -330,7 +329,7 @@ const Shop = () => {
 
 export default function Home() {
   return (
-    <div className="text-black">
+    <div>
       <Header />
       <Hero />
       <HeroBanner />
