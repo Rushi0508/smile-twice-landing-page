@@ -153,7 +153,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="border-t-2">
+    <footer className="border-t-2 bg-white">
       <div className="flex py-12 2xl:w-2/3 lg:w-[95%] mx-auto">
         <div className="flex gap-12 justify-between w-full py-6">
           <div>
@@ -206,7 +206,7 @@ const Footer = () => {
 
 const CTA = () => {
   return (
-    <div className="flex items-center">
+    <div className="flex items-center bg-white">
       <div className="w-1/2 h-full px-12 mx-4 flex flex-col gap-6">
         <p className="text-xl text-black">CULT FAVORITE</p>
         <p className="text-6xl text-black">This is Oral Wellness IMMUNITY RINSE</p>
@@ -259,19 +259,19 @@ const Shop = () => {
   const info = [
     {
       name: "ENRICHED FORMULAS",
-      icon: <CirclePlus size={40} />
+      icon: <CirclePlus size={40} color="black" />
     },
     {
       name: "MOUTH BODY BALANCE",
-      icon: <Flower size={40} />
+      icon: <Flower size={40} color="black" />
     },
     {
       name: "PLANT-POWERED CLEAN",
-      icon: <Tent size={40} />
+      icon: <Tent size={40} color="black" />
     },
     {
       name: "MADE WITHOUT COMPROMISE",
-      icon: <Leaf size={40} />
+      icon: <Leaf size={40} color="black" />
     }
   ]
 
